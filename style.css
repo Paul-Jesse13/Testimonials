@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f96247;
+    position: relative;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.container {
+    background: #FFFFFF;
+    padding: 30px 40px 50px;
+    max-width: 600px;
+    z-index: 5;
+    transition: transform 0.5s;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.container:hover {
+    transform: translateY(-10px);
+}
+
+
+
+.testimonial .info {
+    text-align: center;
+    padding: 0px 70px;
+
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.testimonial .info img {
+    width: 40px;
+    margin-top: 0px;
+    border-radius: 50%;
+}
+
+
+
+.info p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 12px 0;
+    color: #555;
+}
+
+.testimonial .info h3 {
+    font-weight: 600;
+    color: #555;
+    font-size: 13px;
+}
+
+.testimonial .info ol {
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.testimonial .info ol li {
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    background: #b1aea9;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
+.testimonial .info ol li.focus {
+    width: 7px;
+    height: 7px;
+    background: #000;
+}
+
+ul li {
+    position: absolute;
+    border: none;
+    list-style: none;
+}
+
+.colors li {
+    top: 0vh;
+    left: 0;
+    width: 50%;
+    height: 38%;
+    background: purple;
+}
+
+.colors li:last-child {
+    top: 38vh;
+    left: 0;
+    width: 65%;
+    height: 70%;
+    background: #f9a347;
+}
+
+@media only screen and (max-width: 605px) {
+    .container {
+        max-width: 400px;
+        padding: 30px 10px 50px;
+    }
+
+    .info p {
+        font-size: 12px;
+        margin: 12px 0;
+        color: #555;
+    }
+}
+@media only screen and (max-width: 408px) {
+    .container {
+        max-width: 300px;
+        padding: 20px 5px 30px;
+    }
+
+    .info p {
+        font-size: 10px;
+        line-height: 1.3;
+        margin: 12px 0;
+        color: #555;
+    }
+    .testimonial .info h3 {
+    font-weight: 600;
+    color: #555;
+    font-size: 10px;
+}
+    .testimonial .info ol li {
+    width: 4px;
+    height: 4px;
+    margin: 0 2px;
+}
+
+.testimonial .info ol li.focus {
+    width: 5px;
+    height: 5px;
+    background: #000;
+}
+}
